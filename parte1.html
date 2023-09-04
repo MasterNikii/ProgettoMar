@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!--<script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://rawcdn.githack.com/elbobo/aframe-gltf-morph-component/07e9b80bd382cc1c19223468d35c453e7c76e9a2/dist/aframe-gltf-morph-component.js"></script>
+    <script src="/audio/audiomanager.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---->
+
+    <a-scene webar-scene="key: e5568247-b55d-4a69-8769-f8f411f77ac5">
+        <a-assets>
+            <a-asset-item id="personaggio" src="/avatar3d/modelli/modello1/personaggio.gltf"></a-asset-item>
+            <a-asset-item id="personaggiof" src="/avatar3d/modelli/modello f/personaggiof.gltf"></a-asset-item>
+            <a-asset-item id="cancello" src="/OGGETTI3D/FANCE/scene.gltf"></a-asset-item>
+            <img id="sky" src="/immagini/firenze 360 giorno (1).jpg">
+
+            
+            <img id="grass" src="/immagini/grass.png">
+            
+
+
+
+
+          </a-assets>
+        <a-camera  webar-camera cursor="rayOrigin: mouse; fuse: false"></a-camera>
+        <a-entity webar-stage>
+            <!-- Tutti gli elementi 3d in AR dovranno essere all’interno di questa entity -->
+         </a-entity>
+         <a-gltf-model scale="1 1 1" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#personaggio" position="0 0 -4"
+         animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatar" onclick="parlata(), offText()">
+         <a-text value="Hey ciao sono Toni, sceglimi per visitare il percorso basato su Dante de Medici e Pinocchio" position="0 2.2  0"color="black" id="Text" width="4" visible="false"></a-text> </a-gltf-model>
+         <!--<a-gltf-model src="#cancello" position="-10 0 4" scale="3 2 3" ></a-gltf-model>
+         <a-gltf-model src="#cancello" position="10 0 4" scale="3 2 3" ></a-gltf-model>
+         <a-gltf-model src="#cancello" position="9.5 0 4" scale="3.5 2 3.3" rotation="0 90 0"></a-gltf-model>
+         <a-gltf-model src="#cancello" position="9.5 0 -13.5" scale="3.5 2 3.35" rotation="0 90 0"></a-gltf-model>-->
+         
+
+
+
+         <!--<a-box position="0 -0.2 0" scale="5 0.2 5" src="#grass"></a-box>
+         <a-box position="0 -0.2 -5" scale="5 0.2 5" src="#grass"></a-box>
+         <a-box position="5 -0.2 0" scale="5 0.2 5" src="#grass"></a-box>
+         <a-box position="5 -0.2 -5" scale="5 0.2 5" src="#grass"></a-box>
+         <a-box position="-5 -0.2 -5" scale="5 0.2 5" src="#grass"></a-box>
+         <a-box position="-5 -0.2  0" scale="5 0.2 5" src="#grass"></a-box>-->
+         <a-circle color="#06b6c2" position="0 0 -3.6" scale="0.7 0.4 1" onclick="secondaParte()">
+            <a-text value="Percorso 1" class="testo_bottone" align="center" ></a-text>
+        </a-circle>
+
+
+
+         <a-sky src="#sky"></a-sky>
+
+         
+
+         
+
+
+       
+    </a-scene>
+ 
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Zero Two Chibby
+* source:	https://sketchfab.com/3d-models/zero-two-chibby-f6a93f1afb70466e8024cc2d1d7ac1e5
+* author:	Dylan Spin (https://sketchfab.com/DylanSpin)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Zero Two Chibby" (https://sketchfab.com/3d-models/zero-two-chibby-f6a93f1afb70466e8024cc2d1d7ac1e5) by Dylan Spin (https://sketchfab.com/DylanSpin) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

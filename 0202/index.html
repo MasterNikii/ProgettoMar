@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <a-scene>
+        <a-camera webar-camera></a-camera>
+        <a-box position="0 0 0" rotation="0 0 0" width="1" height="1"color="red">
+            <a-gltf-model src="/marker/lumaca/scene.gltf" scale=" 0.05 0.05 0.05" position="0 0.5 -0.2" rotation="0 180 0" 
+            animation="property: position; to: 0 0.5 0.2; loop: true; dur: 5000"></a-gltf-model>
+            <a-box  look-at="[camera]"position="-0.3 0.3 0.5" rotation="0 0 0" width="0.2" height="0.2" depth="0.2" color="green"></a-box>
+            <a-box look-at="[camera]" position="0.3 0.3 0.5" rotation="0 0 0" width="0.2" height="0.2" depth="0.2" color="green"></a-box>
+            <a-box position="-6 10 -62" color="#ffff00" side="duble" width="35" height="40" depth="4">
+                <a-box position="0 16.5 0.2" rotation="0 0 0" width="25" height="1" depth="5"color="black"></a-box>
+                <a-sphere look-at="[camera]" color="#f2f2f2" radius="5"  position="-7 10 0">
+                    <a-circle color="#66ccff" position="0 0 5.1" radius="2">
+                        <a-circle color="black" radius="1" position="0 0 0.1">
+                            <a-circle color="white" radius="0.5" position="0.2 0.6 0.2  "></a-circle>
+                        </a-circle>
+                    </a-circle>
+                </a-sphere>
+                <a-sphere look-at="[camera]" color="#f2f2f2" radius="5"  position="7 10 0.1">
+                    <a-circle color="#66ccff" position="0 0 5.1" radius="2">
+                        <a-circle color="black" radius="1" position="0 0 0.2">
+                            <a-circle color="white" radius="0.5" position="-0.2 0.6 0.2"></a-circle>
+                        </a-circle>
+                    </a-circle>
+                </a-sphere>
+                <a-circle color="#ffcc00" radius="2" position="10 -9 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="-12 -12 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="-0.5 -7 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="10 0 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="-11 -2 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="0 8.5 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="-14 10 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="0 0 2.5"></a-circle>
+                <a-circle color="#ffcc00" radius="2" position="14 12 2.5"></a-circle>
+                <a-text value="Sono dario e ti offriro i volumi 5/6/7/8 di 02" position="0 0 10"color="red" id="Text" width="35"></a-text>
+                
+
+            </a-box>
+            <a-video look-at="[camera]" src="/video/zerotwo.mp4" width="16" height="9" position="0 0 -20" autoplay loop="true" id="Video"></a-video>
+        </a-box>
+        <div id="Bottone">
+            <button onclick="offText()" id="Bottone2">Nascondi testo</button>
+        </div>
+    </a-scene>
+</body>
+</html>

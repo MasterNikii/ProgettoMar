@@ -1,0 +1,12 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.https": {
+    "enable": true, //set it true to enable the feature.
+    "cert": "C:/Users/utenteprincipale/Desktop/LiveServer HTTPS/https/localhost.pem", //full path of the certificate
+    "key": "C:/Users/utenteprincipale/Desktop/LiveServer HTTPS/https/localhost.key", //full path of the private key
+    "passphrase": "0000"
+    },
+    "liveServer.settings.NoBrowser": true
+    }

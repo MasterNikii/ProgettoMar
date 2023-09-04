@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-chromakey-material/dist/aframe-chromakey-material.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <!---->
+    </head>
+    <body>
+    
+        <a-scene>
+            <a-assets>
+                <video id="Mygreen" loop="true" src="/video/verde.mp4"></video>
+                <a-asset-item id="Fenix" src="/modelli/FENIX/scene.gltf"></a-asset-item>
+                <a-asset-item id="personaggio" src="/modelli/Personaggio/personaggio.gltf"></a-asset-item>
+
+              </a-assets>
+
+              <a-camera webar-camera cursor="rayOrigin: mouse; fuse: false"></a-camera>
+              <a-video material="shader: chromakey; src: #Mygreen; color: 0.1 0.9 0.2;" height=9 width=16 position="0 1 -10" id="Video" scale="1 1 1" onclick="playVideo()"></a-video>
+              <a-gltf-model scale="0.1 0.1 0.1" src="#Fenix" <!--animation-mixer="clip: Take 001; loop:true;" position="-50 15 -20"></a-gltf-model>
+              <a-gltf-model scale="1 1 1" src="#personaggio" animation-mixer="clip: animazione001; loop:true;" position="0 0 0"></a-gltf-model>
+
+
+
+
+        </a-scene>
+</body>
+</html>

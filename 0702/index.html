@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+    
+        <a-scene>
+            <a-assets>
+                <video id="myVideo"  loop="true" src="/video/zerodue.mp4"></video>
+              </a-assets>
+
+              <a-camera webar-camera cursor="rayOrigin: mouse; fuse: false"></a-camera>
+              
+   
+             <a-video src="#myVideo" width="20" height="20" position="0 10 -20" id="Video"></a-video>
+             <a-plane side="double" position="0 0 -5" height="1" width="1" onclick="playVideo()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKR9sXqa_CBEaBf4rb5ABXa5h7xwA5C7rGtw&usqp=CAU"></a-plane>
+             <a-plane side="double" position="1.5 0 -5" height="1" width="1" onclick="stopVideo()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCwhRGfSlAZuIxpa1nBYSLGCaxj5-IpWqaNA&usqp=CAU"></a-plane>
+
+        </a-scene>
+</body>
+</html>

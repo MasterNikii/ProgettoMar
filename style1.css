@@ -1,0 +1,44 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 10px;
+    font-family:  'Helvetica', cursive;
+    color: black;
+
+}
+body{
+    background-color: #06b6c28e;
+}
+h1{
+    font-size: 20px;
+    line-height: 20px;
+}
+#pulsante{
+    text-align: center;
+    
+}
+
+#tutorial{
+    background-color: #06b6c242;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 0px;
+    
+
+}
+#_tutorial{
+    color: white;
+}
+.imag{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+.immg{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+

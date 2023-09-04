@@ -1,0 +1,11 @@
+Model Information:
+* title:	B2B2 Palate Alexandre - Pinocchio
+* source:	https://sketchfab.com/3d-models/b2b2-palate-alexandre-pinocchio-aa2e855031184cdf8af180566b16e925
+* author:	palatealexandre (https://sketchfab.com/palatealexandre)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "B2B2 Palate Alexandre - Pinocchio" (https://sketchfab.com/3d-models/b2b2-palate-alexandre-pinocchio-aa2e855031184cdf8af180566b16e925) by palatealexandre (https://sketchfab.com/palatealexandre) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
