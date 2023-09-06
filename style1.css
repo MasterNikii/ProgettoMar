@@ -7,11 +7,18 @@
 
 }
 body{
-    background-color: #06b6c28e;
+    background-image: url(/DAJE/immaginisss/david2.png);
+    background-size:75%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #06b6c297;
 }
 h1{
     font-size: 20px;
     line-height: 20px;
+    margin: 20px;
+    justify-content:center;
+    text-align: center;
 }
 #pulsante{
     text-align: center;

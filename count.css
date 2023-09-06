@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(/DAJE/immaginisss/screens.png);
+    background-size: cover; /* Per adattare l'immagine di sfondo alla dimensione della finestra del browser */
+    background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
+    background-attachment: fixed; /* Per fissare l'immagine di sfondo in modo che rimanga ferma durante lo scrolling */
+    
+}
+@media (max-width: 1000px) {
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-image: url(/DAJE/immaginisss/screnmeglio.jpg);
+    }
+}
+
+
+#countdown {
+    font-size: 500px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #06b6c28e;
+    padding-top: 55%;
+}

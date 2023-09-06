@@ -1,7 +1,9 @@
 var map = L.map('map').setView([43.77106985517448, 11.253572351144337], 16.4);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19, 
+    maxZoom: 21,
+    minZoom: 15,
 }).addTo(map);
+
 
 
 var latlngs = [
@@ -26,13 +28,28 @@ var latlngs = [
 
 ];
 var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
-
-
+var popup = L.popup({
+  autoClose: false,  // Impedisce la chiusura automatica del popup
+  closeOnClick: false,  // Impedisce la chiusura del popup quando si fa clic sulla mappa
+  className: 'custom-popup' // Aggiungi la classe CSS personalizzata
+})
+  .setLatLng([43.775547485871044, 11.253711462123889])
+  .setContent('Partenza')
+  .openOn(map);
 const marker1 = L.marker([43.77540456072461, 11.25368819025707]).addTo(map);
 const marker2 = L.marker([43.77481638891255, 11.249959023049692]).addTo(map);
 const marker3 = L.marker([43.76972251390504, 11.255643385939326]).addTo(map);
 const marker4 = L.marker([43.76938161905783, 11.255686308116639]).addTo(map);
 const marker5 = L.marker([43.76795604656944, 11.255337621614501]).addTo(map);
+var popupa = L.popup({
+  autoClose: false,  // Impedisce la chiusura automatica del popup
+  closeOnClick: false,  // Impedisce la chiusura del popup quando si fa clic sulla mappa
+  className: 'custom-popup' // Aggiungi la classe CSS personalizzata
+})
+  .setLatLng([43.76798392376237, 11.255354520686927])
+  .setContent('    Arrivo   ')
+  .openOn(map);
+
 
 
 let template1 =`
@@ -205,4 +222,11 @@ marker2.bindPopup(template2);
 marker3.bindPopup(template3);
 marker4.bindPopup(template4);
 marker5.bindPopup(template5);
+
+
+
+
+
+
+
   

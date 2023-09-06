@@ -9,7 +9,6 @@
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
@@ -22,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="scripttappe.js" defer></script>
+    <script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>
 </head>
 <body>
     <a-scene webar-scene="key: e5568247-b55d-4a69-8769-f8f411f77ac5">
@@ -38,6 +38,9 @@
             <a-gltf-model scale="0.01 0.01 0.01" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#Dante" position="3 0 -1"
             animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatarDa"></a-gltf-model>
             <a-plane color="#CCC" depth="0.5" height="2" width="1.85" position="3 0.9 -1" onclick="parlataDante()" opacity="0"></a-plane>
+            <a-box color="blue" position="1.266 0.416 -1" depth="0.1" height="0.5" width="1" onclick="parteFinale()">
+                <a-text value="Fine" class="testo_bottone" align="center" position="0 0 0.1"></a-text>
+            </a-box>
 
         </a-entity> 
       </a-scene>

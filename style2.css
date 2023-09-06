@@ -5,7 +5,7 @@
     font-family: 'Press Start 2P', cursive;
     color: black;
     list-style: none;
-    font-size: 20px;
+    font-size: 15px;
     
 }
 body{
@@ -62,4 +62,9 @@ li{
   .my-btn:hover {
     background-color: #3e8e41;
   }
-  
+  .leaflet-top{
+    display: none;
+  }
+  .leaflet-top{
+    text-align: center;
+  }

@@ -174,3 +174,7 @@ function offTextl(){
         
     }
 }
+function parteFinale(){
+    window.location.href ="fine.html";
+
+}
