@@ -47,7 +47,7 @@ finishButton.addEventListener("click", function () {
   showButton.style.display = "block";
 
   // Aggiungi più coriandoli
-  addConfetti(200); // Modifica il numero di coriandoli desiderato
+  addConfetti(1000); // Modifica il numero di coriandoli desiderato
 });
 
 

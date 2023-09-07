@@ -54,6 +54,7 @@ function parlataDante3(){
     var me= document.getElementById("idAvatar")
     me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatar", "/avatar3d/audio/DarioUffizi.mp3", parlaPe);
+
 }
 
 function parlaDante3(){
@@ -69,7 +70,7 @@ function parlaDante3(){
 
 function parlataF(){
     var me= document.getElementById("idAvatarF")
-    me.setAttribute("animation-mixer", "clip: pinocchio; crossFadeDuron: 1; loop:true;")
+    me.setAttribute("animation-mixer", "clip: pinocchio; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarP", "/avatar3d/audio/ParlataPi.mp3", parlaF);
 }
 
@@ -87,7 +88,7 @@ function parlaF(){
 
 function parlataFr(){
     var me= document.getElementById("idAvatarFr")
-    me.setAttribute("animation-mixer", "clip: Francesco; crossFadeDuron: 1; loop:true;")
+    me.setAttribute("animation-mixer", "clip: Francesco; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarP", "/avatar3d/audio/Petrarca.mp3", parlaFr);
 }
 
@@ -102,7 +103,7 @@ function parlaFr(){
 
 function parlataDa(){
     var me= document.getElementById("idAvatarDa")
-    me.setAttribute("animation-mixer", "clip: dante; crossFadeDuron: 1; loop:true;")
+    me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarDa", "/avatar3d/audio/PiazzaDante.mp3", parlaDa);
 }
 
@@ -117,7 +118,7 @@ function parlaDa(){
 
 function parlataDan(){
     var me= document.getElementById("idAvatarDa")
-    me.setAttribute("animation-mixer", "clip: dante; crossFadeDuron: 1; loop:true;")
+    me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarDa", "/avatar3d/audio/VecchioDante.mp3", parlaDan);
 }
 
@@ -132,8 +133,14 @@ function parlaDan(){
 
 function parlataDante(){
     var me= document.getElementById("idAvatarDa")
-    me.setAttribute("animation-mixer", "clip: dante; crossFadeDuron: 1; loop:true;")
+    me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarDa", "/avatar3d/audio/ULTIMOPORCODIO.mp3", parlaDante);
+    var elemento = document.getElementById("Cubo"); // Sostituisci "ilTuoElemento" con l'ID del tuo elemento
+  
+    // Verifica se l'elemento esiste prima di impostare l'attributo
+    if (elemento) {
+      elemento.setAttribute("visible", "true");
+    }
 }
 
 function parlaDante(){
@@ -178,3 +185,21 @@ function parteFinale(){
     window.location.href ="fine.html";
 
 }
+function eseguiAzione(){
+    window.location.href ="percorso.html"
+}
+// Definisci la funzione per impostare l'attributo "visible" su "true"
+function setElementVisibleTrue() {
+    // Trova l'elemento a cui desideri applicare l'attributo
+    var elemento = document.getElementById("Cubo"); // Sostituisci "ilTuoElemento" con l'ID del tuo elemento
+  
+    // Verifica se l'elemento esiste prima di impostare l'attributo
+    if (elemento) {
+      elemento.setAttribute("visible", "true");
+    }
+  }
+  
+  // Collega la funzione a un elemento HTML tramite l'evento di click
+  var ilTuoBottone = document.getElementById("idAvatar"); // Sostituisci "ilTuoBottone" con l'ID del tuo bottone
+  ilTuoBottone.addEventListener("grabbing", setElementVisibleTrue);
+  

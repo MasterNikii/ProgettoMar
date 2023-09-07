@@ -36,8 +36,8 @@ body {
         position: absolute;  
         left: 10px;
         z-index: 1000;
-        background-color: #fff;
-        padding: 5px;
+        background-color:aqua;
+        padding: 10px;
         bottom: 80px;
         border: 1px solid #ccc;
         border-radius: 5px;

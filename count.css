@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url(/DAJE/immaginisss/screens.png);
+    background-color: aqua;
     background-size: cover; /* Per adattare l'immagine di sfondo alla dimensione della finestra del browser */
     background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
     background-attachment: fixed; /* Per fissare l'immagine di sfondo in modo che rimanga ferma durante lo scrolling */
@@ -11,7 +11,7 @@ body {
     body {
         font-family: Arial, sans-serif;
         text-align: center;
-        background-image: url(/DAJE/immaginisss/screnmeglio.jpg);
+        background-color: aqua;
     }
 }
 
