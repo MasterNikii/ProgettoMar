@@ -24,6 +24,7 @@ body{
     height: 33px;
     width: 33px;
     align-items: center;
+    margin-right: 20px;
 }
 .bottone{
     
@@ -57,10 +58,11 @@ li{
     transition: background-color 0.3s;
     width: 100%;
     font-family: 'Press Start 2P', cursive;
+    display: flex;
   }
   
   .my-btn:hover {
-    background-color: #3e8e41;
+    background-color: #017eff6e;
   }
   .leaflet-top{
     display: none;

@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="scripttappe.js" defer></script>
-    <script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>
+    <!--<script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>-->
 </head>
 <body>
     <a-scene webar-scene="key: e5568247-b55d-4a69-8769-f8f411f77ac5">
@@ -39,6 +39,9 @@
             animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatarDa"></a-gltf-model>
             <a-plane color="#CCC" depth="0.5" height="2" width="1.85" position="3 0.9 -1" onclick="parlataDante()" opacity="0" id="cubi"></a-plane>
             <a-box color="blue" id="Cubo" visible="false" position="1.266 0 -1" depth="0.1" height="0.3" width="0.5" onclick="parteFinale()">
+                <a-text value="Fine" class="testo_bottone" align="center" position="0 0 0.1"></a-text>
+            </a-box>
+            <a-box color="blue" id="muretto" visible="false" position="1.266 0 -1" depth="1" height="1" width="1" onclick="">
                 <a-text value="Fine" class="testo_bottone" align="center" position="0 0 0.1"></a-text>
             </a-box>
             <div id="divbutton">

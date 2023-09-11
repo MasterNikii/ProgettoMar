@@ -29,13 +29,13 @@ function parla(){
     me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: .6; loop:once;")
 }
 function parlataf(){
-    var me= document.getElementById("idAvatarf")
+    var me= document.getElementById("idAvatarF")
     me.setAttribute("animation-mixer", "clip: parlata01; crossFadeDuration: 1; loop:true;")
-    StartAudioAndUpdatingMouth( "idAvatar", "/audio/SANDRA.mp3", parlaf);
+    StartAudioAndUpdatingMouth( "idAvatar", "/audio/sandrina.mp3", parlaf);
 }
 
 function parlaf(){
-    var me= document.getElementById("idAvatarf")
+    var me= document.getElementById("idAvatarF")
     me.setAttribute("animation-mixer", "clip: parlata01; crossFadeDuration: .6; loop:once;")
 }
 
@@ -90,6 +90,10 @@ function secondaParte(){
 }
 function _homepage(){
     window.location.href ="parte2.html";
+
+}
+function secondaParteH(){
+    window.location.href ="parte2h.html";
 
 }
 

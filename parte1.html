@@ -40,13 +40,17 @@
 
 
           </a-assets>
-        <a-camera  webar-camera cursor="rayOrigin: mouse; fuse: false"></a-camera>
+        <a-camera  webar-camera cursor="rayOrigin: mouse; fuse: false"
+        position="1.314 1.6 0"></a-camera>
         <a-entity webar-stage>
             <!-- Tutti gli elementi 3d in AR dovranno essere all’interno di questa entity -->
          </a-entity>
          <a-gltf-model scale="1 1 1" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#personaggio" position="0 0 -4"
          animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatar" onclick="parlata(), offText()">
          <a-text value="Hey ciao sono Toni, sceglimi per visitare il percorso basato su Dante de Medici e Pinocchio" position="0 2.2  0"color="black" id="Text" width="4" visible="false"></a-text> </a-gltf-model>
+         <a-gltf-model scale="1 1 1" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#personaggiof" position="3 0 -4"
+         animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatarF" onclick="parlataf(), offText()">
+         <a-text value="Hey ciao sono Sandra, sceglimi per visitare il percorso " position="0 2.2  0"color="black" id="Text" width="4" visible="false"></a-text> </a-gltf-model>
          <!--<a-gltf-model src="#cancello" position="-10 0 4" scale="3 2 3" ></a-gltf-model>
          <a-gltf-model src="#cancello" position="10 0 4" scale="3 2 3" ></a-gltf-model>
          <a-gltf-model src="#cancello" position="9.5 0 4" scale="3.5 2 3.3" rotation="0 90 0"></a-gltf-model>
@@ -63,6 +67,9 @@
          <a-box position="-5 -0.2  0" scale="5 0.2 5" src="#grass"></a-box>-->
          <a-circle color="#06b6c2" position="0 0 -3.6" scale="0.7 0.4 1" onclick="secondaParte()">
             <a-text value="Percorso Storico" class="testo_bottone" align="center" ></a-text>
+        </a-circle>
+        <a-circle color="#06b6c2" position="3 0 -3.6" scale="0.7 0.4 1" onclick="secondaParteH()">
+            <a-text value="Percorso Handicap" class="testo_bottone" align="center" ></a-text>
         </a-circle>
 
 

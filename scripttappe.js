@@ -141,12 +141,18 @@ function parlataDante(){
     if (elemento) {
       elemento.setAttribute("visible", "true");
     }
+    var oggetto = document.getElementById('muretto');
+
+oggetto.addEventListener('click', function() {
+  oggetto.remove(); // Rimuove l'oggetto dalla pagina
+});
 }
 
 function parlaDante(){
     var me= document.getElementById("idAvatarDa")
     me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: .6; loop:once;")
 }
+
 
 
 

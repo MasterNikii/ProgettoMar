@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+    <link rel="stylesheet" href="count.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="countdown">5</div>
+
+    <script>
+        // Funzione per avviare il countdown
+        function startCountdown() {
+            var countdown = 5; // Imposta il tempo iniziale in secondi
+
+            // Aggiorna il conteggio ogni secondo
+            var countdownInterval = setInterval(function() {
+            if (countdown === 0) {
+                clearInterval(countdownInterval); // Ferma il countdown quando raggiunge 0
+                document.getElementById("countdown").innerHTML = "0";
+                // Reindirizza l'utente verso un'altra pagina HTML dopo 1 secondo
+                setTimeout(function() {
+                    window.location.href = "percorsoh.html";
+                }, 500);
+            } else {
+                document.getElementById("countdown").innerHTML = countdown;
+                countdown--;
+            }
+        }, 500);
+    }
+
+        // Avvia il countdown quando la pagina è pronta
+        document.addEventListener("DOMContentLoaded", startCountdown);
+    </script>
+</body>
+</html>
