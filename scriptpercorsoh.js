@@ -20,7 +20,7 @@ var latlngs = [
     [43.76793486284088, 11.255267846407879],/*Palazzo Vecchio*/
 
 ];
-var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+var polyline = L.polyline(latlngs, {color: "rgb(44 132 203)"}).addTo(map);
 var popup = L.popup({
   autoClose: false,  // Impedisce la chiusura automatica del popup
   closeOnClick: false,  // Impedisce la chiusura del popup quando si fa clic sulla mappa
@@ -44,181 +44,113 @@ var popupa = L.popup({
 
 
 
-let template1 =`
-<div>
-<img style="  display: flex;
-justify-content: center;
-align-items: center;
-height: 255px;
-width: 255px;
-" src="/DAJE/immaginisss/toni/mercato.jpg" alt="" style="">
-</div>
-
-<button class="my-btn" style=".my-btn {
-    background-color: #d43f8d;
-    border: none;
-    color: #fff;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    font-family:  'Helvetica', cursive;
-  }
+  let template1 =`
+  <div>
+  <img style="  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 255px;
+  width: 255px;
+  border-radius: 20px;
+  " src="/DAJE/immaginisss/toni/mercato.jpg" alt="" style="">
+  </div>
   
-  .my-btn:hover {
-    background-color: #ff5c99;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
-  "><a href="tappa1.html" id="_tutorial">Arrivato</a></button>
-`
-let template2 =`
-
-<div>
-<img style="  display: flex;
-justify-content: center;
-align-items: center;
-height: 255px;
-width: 255px;
-" src="/DAJE/immaginisss/225px-Firenze_Palazzo_della_Signoria,_better_known_as_the_Palazzo_Vecchio.jpg" alt="" style="">
-</div>
-
-<button class="my-btn" style=".my-btn {
-    background-color: #d43f8d;
-    border: none;
-    color: #fff;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-  }
+  <a href="tappad1.html" style="background-color: white;
+  border: none;
+  color: rgb(44 132 203);
+  background-color: #ffff;
+  padding: 16px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22 px;
+  font-weight: bold;
   
-  .my-btn:hover {
-    background-color: #ff5c99;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
-  "><a href="tappa2.html" id="_tutorial">Arrivato</a></button>
-`
-let template3 =`
-
-<div>
-<img style="  display: flex;
-justify-content: center;
-align-items: center;
-height: 255px;
-width: 255px;
-" src="/DAJE/immaginisss/toni/cattedrale.jpg" alt="">
-</div>
-
-<button class="my-btn" style=".my-btn {
-    background-color: #d43f8d;
-    border: none;
-    color: #fff;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-  }
   
-  .my-btn:hover {
-    background-color: #ff5c99;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
-  "><a href="tappa3.html" id="_tutorial">Arrivato</a></button>
-`
-let template4 =`
-
-<div>
-<img style="  display: flex;
-justify-content: center;
-align-items: center;
-height: 255px;
-width: 255px;
-" src="/DAJE/immaginisss/toni/uffizi3.jpg" alt="">
-</div>
-
-<button class="my-btn" style=".my-btn {
-    background-color: #d43f8d;
-    border: none;
-    color: #fff;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-  }
+  transition: all 0.3s ease-in-out;">Arrivato</a>
+  `
+  let template2 =`
   
-  .my-btn:hover {
-    background-color: #ff5c99;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
-  "><a href="tappa4.html" id="_tutorial">Arrivato</a></button>
-`
-let template5 =`
-<div>
-<img style="  display: flex;
-justify-content: center;
-align-items: center;
-height: 255px;
-width: 255px;
-" src="/DAJE/immaginisss/uffizi3.jpg" alt="">
-</div>
-
-<button class="my-btn" style=".my-btn {
-    background-color: #d43f8d;
-    border: none;
-    color: #fff;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-  }
+  <div>
+  <img style="  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 255px;
+  width: 255px;
+  border-radius: 20px;
+  " src="/DAJE/immaginisss/toni/castello.jpg" alt="" style="">
+  </div>
   
-  .my-btn:hover {
-    background-color: #ff5c99;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
-  "><a href="tappa5.html" id="_tutorial">Arrivato</a></button>
-`
-
-marker1.bindPopup(template1);
-marker2.bindPopup(template2);
-marker3.bindPopup(template3);
-marker4.bindPopup(template4);
-marker5.bindPopup(template5);
-
-
-
-
-
-
+  <a href="tappad2.html" style="background-color: white;
+  border: none;
+  color: rgb(44 132 203);
+  background-color: #ffff;
+  padding: 16px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22 px;
+  font-weight: bold;
+  
+  
+  transition: all 0.3s ease-in-out;">Arrivato</a>
+  `
+  let template3 =`
+  
+  <div>
+  <img style="  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 255px;
+  width: 255px;
+  border-radius: 20px;
+  " src="/DAJE/immaginisss/toni/cattedrale.jpg" alt="">
+  </div>
+  
+  <a href="tappad3.html" style="background-color: white;
+  border: none;
+  color: rgb(44 132 203);
+  background-color: #ffff;
+  padding: 16px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22 px;
+  font-weight: bold;
+  
+  
+  transition: all 0.3s ease-in-out;">Arrivato</a>
+  `
+  let template4 =`
+  
+  <div>
+  <img style="  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 255px;
+  width: 255px;
+  border-radius: 20px;
+  " src="/DAJE/immaginisss/toni/uffizi3.jpg" alt="">
+  </div>
+  
+  <a href="tappad4.html" style="background-color: white;
+  border: none;
+  color: rgb(44 132 203);
+  background-color: #ffff;
+  padding: 16px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22 px;
+  font-weight: bold;
+  
+  
+  transition: all 0.3s ease-in-out;">Arrivato</a>
+  `
 
   
+  marker1.bindPopup(template1);
+  marker2.bindPopup(template2);
+  marker3.bindPopup(template3);
+  marker4.bindPopup(template4);
+  marker5.bindPopup(template5);

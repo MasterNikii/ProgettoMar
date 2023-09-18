@@ -194,6 +194,9 @@ function parteFinale(){
 function eseguiAzione(){
     window.location.href ="percorso.html"
 }
+function eseguiAzioneh(){
+    window.location.href ="percorsoh.html"
+}
 // Definisci la funzione per impostare l'attributo "visible" su "true"
 function setElementVisibleTrue() {
     // Trova l'elemento a cui desideri applicare l'attributo

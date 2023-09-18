@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'League Spartan', sans-serif;
     text-align: center;
     background-color: aqua;
     background-size: cover; /* Per adattare l'immagine di sfondo alla dimensione della finestra del browser */
@@ -18,7 +18,7 @@ body {
 
 #countdown {
     font-size: 500px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'League Spartan', sans-serif;
     text-align: center;
     color: #06b6c28e;
     padding-top: 55%;

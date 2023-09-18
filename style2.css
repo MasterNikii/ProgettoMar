@@ -2,17 +2,41 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'League Spartan', sans-serif;
     color: black;
     list-style: none;
     font-size: 15px;
     
 }
 body{
-    background-image:url(/DAJE/sfondo.png);
+      /*
+    background-image: url(/DAJE/dario/6.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-color: #06b6c297;*/
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(129 219 213);
+
+}
+.scritta{
+  position: absolute;
+  width: 100vw;
+  bottom: 0px;
+  z-index: 2;
+
+}
+.celo{
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  opacity: .7;
 }
 
 #Navigazione{
@@ -24,7 +48,7 @@ body{
     height: 33px;
     width: 33px;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 15%;
 }
 .bottone{
     
@@ -45,21 +69,36 @@ li{
   }
   
   .my-btn {
-    background-color: #06b6c242;
+    z-index: 50;
     border: none;
-    color: white;
-    padding: 20px;
+    color: rgb(129 219 213);
+    padding: 5%;
     text-align: center;
     align-items: center;
+    text-transform: uppercase;
     text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
+    font-size: 22px;
     border-radius: 4px;
     transition: background-color 0.3s;
     width: 100%;
-    font-family: 'Press Start 2P', cursive;
     display: flex;
+    background-color:#ffffff;
+    z-index: 10;
+    left: 50%;
+
+
+    
   }
+  .contenitore{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+}
   
   .my-btn:hover {
     background-color: #017eff6e;

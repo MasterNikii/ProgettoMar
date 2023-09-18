@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Talk</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -15,31 +15,31 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
     crossorigin=""></script>
-    <script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://rawcdn.githack.com/elbobo/aframe-gltf-morph-component/07e9b80bd382cc1c19223468d35c453e7c76e9a2/dist/aframe-gltf-morph-component.js"></script>
     <script src="/audio/audiomanager.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--<script src="https://webar-sdk.blippar.com/releases/1.4.3/webar-sdk-v1.4.3.min.js"></script>-->
     
 </head>
 <body>
     <a-scene webar-scene="key: e5568247-b55d-4a69-8769-f8f411f77ac5">
-        <a-camera webar-camera cursor="rayOrigin: mouse; fuse: false"></a-camera>
+        <a-camera webar-camera cursor="rayOrigin: mouse; fuse: false"position="2 1 3" ></a-camera>
         <a-assets>
             <a-asset-item id="personaggio" src="/avatar3d/modelli/modello1/personaggio.gltf"></a-asset-item>
             <a-asset-item id="lorenzo" src="/avatar3d/modelli/diocane/pinocchio.gltf"></a-asset-item>
             <a-asset-item id="Francesco" src="/avatar3d/modelli/Petrarca/untitled.gltf"></a-asset-item>
           </a-assets>
         <a-entity webar-stage>
-            <a-gltf-model scale="1 1 1" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#personaggio" position="0 0 -1"
+            <a-gltf-model scale="1 1 1" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#personaggio" position="1 0 -1"
             animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatar" onclick="parlata(), offText()">
            </a-gltf-model>
             <!--<a-gltf-model src="#lorenzo" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" id="idAvatarP" scale="0.01 0.01 0.01" 
             position="3 0 -1" animation-mixer="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" onclick="parlataP()"></a-gltf-model>-->
-            <a-gltf-model scale="0.01 0.01 0.01" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#lorenzo" position="5 0 -1"
+            <a-gltf-model scale="0.013 0.013 0.013" gltf-morph__mouthOpen="morphtarget:mouthOpen;value:0" src="#lorenzo" position="2 0 -1"
             animation="property:gltf-morph__mouthOpen.value; from:0; to:1; dur:1000" id="idAvatarF"></a-gltf-model>
-            <a-plane color="#CCC" depth="0.5" height="1" width="0.5" position="5 0.5 -1" onclick="parlataF()" opacity="0"></a-plane>
+            <a-plane color="#CCC" depth="0.5" height="1.7" width="0.7" position="3 0.5 -1" onclick="parlataF()" opacity="0"></a-plane>
             
             <div id="divbutton">
                 <button id="indietrofine" onclick="eseguiAzione()" >Torna indietro</button>
