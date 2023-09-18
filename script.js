@@ -31,7 +31,7 @@ function parla(){
 function parlataf(){
     var me= document.getElementById("idAvatarF")
     me.setAttribute("animation-mixer", "clip: parlata01; crossFadeDuration: 1; loop:true;")
-    StartAudioAndUpdatingMouth( "idAvatar", "/audio/sandrina.mp3", parlaf);
+    StartAudioAndUpdatingMouth( "idAvatarF", "/audio/audiosandra/partenza.m4a", parlaf);
 }
 
 function parlaf(){

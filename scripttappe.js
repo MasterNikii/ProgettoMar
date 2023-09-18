@@ -8,6 +8,12 @@ function parla(){
     var me= document.getElementById("idAvatar")
     me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: .6; loop:once;")
 }
+function parlataa(){
+    var me= document.getElementById("idAvatar")
+    me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: 1; loop:true;")
+    StartAudioAndUpdatingMouth( "idAvatar", "/audio/audiosandra/tappa1.m4a", parla);
+}
+
 
 
 
@@ -17,6 +23,16 @@ function parlataPe(){
     var me= document.getElementById("idAvatar")
     me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatar", "/avatar3d/audio/PetraPetra.mp3", parlaPe);
+}
+function parlataDantt(){
+    var me= document.getElementById("idAvatar")
+    me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: 1; loop:true;")
+    StartAudioAndUpdatingMouth( "idAvatar", "/audio/audiosandra/tappa3.m4a", parlaPe);
+}
+function parlataPee(){
+    var me= document.getElementById("idAvatar")
+    me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: 1; loop:true;")
+    StartAudioAndUpdatingMouth( "idAvatar", "/audio/audiosandra/tappa2.m4a", parlaPe);
 }
 
 function parlaPe(){
@@ -56,23 +72,29 @@ function parlataDante3(){
     StartAudioAndUpdatingMouth( "idAvatar", "/avatar3d/audio/DarioUffizi.mp3", parlaPe);
 
 }
+function parlataDante33(){
+    var me= document.getElementById("idAvatar")
+    me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: 1; loop:true;")
+    StartAudioAndUpdatingMouth( "idAvatar", "/audio/audiosandra/tappa4.m4a", parlaPe);
+
+}
 
 function parlaDante3(){
     var me= document.getElementById("idAvatar")
     me.setAttribute("animation-mixer", "clip: parlata; crossFadeDuration: .6; loop:once;")
 }
 
-
-
-
-
-
-
 function parlataF(){
     var me= document.getElementById("idAvatarF")
     me.setAttribute("animation-mixer", "clip: pinocchio; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarP", "/avatar3d/audio/ParlataPi.mp3", parlaF);
 }
+function parlataFF(){
+    var me= document.getElementById("idAvatarF")
+    me.setAttribute("animation-mixer", "clip: pinocchio; crossFadeDuration: 1; loop:true;")
+    StartAudioAndUpdatingMouth( "idAvatarP", "/audio/audiosandra/audio pinocchio e petrarca/pinocchio.m4a", parlaF);
+}
+
 
 function parlaF(){
     var me= document.getElementById("idAvatarF")
@@ -80,24 +102,21 @@ function parlaF(){
 }
 
 
-
-
-
-
-
-
 function parlataFr(){
     var me= document.getElementById("idAvatarFr")
     me.setAttribute("animation-mixer", "clip: Francesco; crossFadeDuration: 1; loop:true;")
     StartAudioAndUpdatingMouth( "idAvatarP", "/avatar3d/audio/Petrarca.mp3", parlaFr);
+}
+function parlataFrr(){
+    var me= document.getElementById("idAvatarFr")
+    me.setAttribute("animation-mixer", "clip: Francesco; crossFadeDuration: 1; loop:true;")
+    StartAudioAndUpdatingMouth( "idAvatarP", "/audio/audiosandra/audio pinocchio e petrarca/petrarca.m4a", parlaFr);
 }
 
 function parlaFr(){
     var me= document.getElementById("idAvatarFr")
     me.setAttribute("animation-mixer", "clip: Francesco; crossFadeDuration: .6; loop:once;")
 }
-
-
 
 
 
@@ -113,9 +132,6 @@ function parlaDa(){
 }
 
 
-
-
-
 function parlataDan(){
     var me= document.getElementById("idAvatarDa")
     me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: 1; loop:true;")
@@ -126,9 +142,6 @@ function parlaDan(){
     var me= document.getElementById("idAvatarDa")
     me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: .6; loop:once;")
 }
-
-
-
 
 
 function parlataDante(){
@@ -152,9 +165,6 @@ function parlaDante(){
     var me= document.getElementById("idAvatarDa")
     me.setAttribute("animation-mixer", "clip: dante; crossFadeDuration: .6; loop:once;")
 }
-
-
-
 
 
 
